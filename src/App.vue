@@ -202,7 +202,7 @@ export default {
     padding-left: 50px;
   }
 
-  #menu {
+  menu {
     font-family: helvetica;
     color: white;
     padding: 8px 16px;
@@ -229,4 +229,17 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 24pt;
+
+}
+
+a:hover, a:focus, {
+  opacity: 70%;
+  
+}
+
 </style>
