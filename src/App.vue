@@ -79,39 +79,45 @@
           <div class="desc">ARENA Project</div>
         </div>
 
-        <div class="gallery">
+        <div id="spacer">
+          ...
+        </div>
+
+        <div class="gallery2">
           <a target="_blank" href="kari1.jpg">
           <img src="./assets/kari1.jpg" alt="KARI" width="600" height="400">
           </a>
         <div class="desc">KARI</div>
           </div>
 
-        <div class="gallery">
+        <div class="gallery2">
           <a target="_blank" href="kari2.jpg">
             <img src="./assets/kari2.jpg" alt="KARI2" width="600" height="400">
           </a>
           <div class="desc">KARI</div>
         </div>
 
-        <div class="gallery">
+        <div class="gallery2">
           <a target="_blank" href="kari3.jpg">
             <img src="./assets/kari3.jpg" alt="KARI3" width="600" height="400">
           </a>
           <div class="desc">KARI</div>
         </div>
 
-        <div class="gallery">
+        <div class="gallery2">
           <a target="_blank" href="kari4.jpg">
             <img src="./assets/kari4.jpg" alt="KARI4" width="600" height="400">
           </a>
           <div class="desc">KARI</div>
         </div>
+     
+        
+      </div>
 
+      <div id="section35">
         <div id="shortfilm">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/FmBXdCh3oWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-     
-        
       </div>
 
       <div id="section4">
@@ -182,6 +188,12 @@ export default {
     
   }
 
+  #section35 {
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
+  }
+
   #section4 {
     height: 2480px;
     justify-content: center;
@@ -195,15 +207,16 @@ export default {
 
   #contact_info {
     background-color: black;
-    font-family: helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding-bottom: 50px;
     padding-top: 50px;
     padding-left: 50px;
+    font-size: 16pt;
   }
 
   menu {
-    font-family: helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 8px 16px;
 
@@ -230,6 +243,22 @@ div.desc {
   text-align: center;
 }
 
+div.gallery2 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery2:hover {
+  border: 1px solid #777;
+}
+
+div.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -237,9 +266,12 @@ a {
 
 }
 
-a:hover, a:focus, {
+a:hover {
   opacity: 70%;
-  
-}
+ }
+
+ spacer {
+   height: 200px;
+ }
 
 </style>
