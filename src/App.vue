@@ -6,22 +6,23 @@
     >
       <!--  -->
       <div id="menu">
-      <a href="#section1">ABOUT</a>
       <br>
-      <a href="#section2">VIDEO CV</a>
+      <a href="#section1" style="color:black">ABOUT</a>
       <br>
-      <a href="#section3">PORTFOLIO</a>
+      <a href="#section2" style="color:black">VIDEO CV</a>
       <br>
-      <a href="#section4">RESUME</a>
+      <a href="#section3" style="color:black">PORTFOLIO</a>
       <br>
-      <a href="#section5">CONTACT</a>
+      <a href="#cvpic" style="color:black">RESUME</a>
+      <br>
+      <a href="#section5" style="color:black">CONTACT</a>
       </div>
     </v-navigation-drawer>
 
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>ARDAL</v-toolbar-title>
+      <v-toolbar-title>ARDAL Portfolio</v-toolbar-title>
     </v-app-bar>
     
 
@@ -29,12 +30,16 @@
 
 
       <!-- Content stuff -->
-    
+  
       <div id="section1">
         <h1>ABOUT ARDAL</h1>
         <div id="ABOUT ARDAL">
           <article>
-            Visual media designer specialising in video production and photography.
+            Visual media designer specialising in video production and photography. From a small <br>
+            fishing town in Iceland, currently living in Esbjerg, Denmark for studying. Worked on <br>
+            projects ranging from interviews and video production for Reykjavík-based production <br>
+            company Ursus Parvus to freelance photography gigs for Icelandic ARENA swimwear <br>
+            distributor and local supplement store Bætiefnabúllan.
           </article>
         </div>
       </div>
@@ -48,7 +53,7 @@
       </div>
 
       <div id="section3">
-        <h1>PORTFOLIO</h1>
+        <h1>PORTFOLIO - Photography, Graphic design and Video</h1>
         <br>
 
         <div class="gallery">
@@ -77,13 +82,11 @@
             <img src="./assets/kat.jpg" alt="ARENA4" width="600" height="400">
           </a>
           <div class="desc">ARENA Project</div>
-        </div>
+        </div>    
+      </div>
 
-        <div id="spacer">
-          ...
-        </div>
-
-        <div class="gallery2">
+      <div id="section32">
+                <div class="gallery2">
           <a target="_blank" href="kari1.jpg">
           <img src="./assets/kari1.jpg" alt="KARI" width="600" height="400">
           </a>
@@ -110,8 +113,36 @@
           </a>
           <div class="desc">KARI</div>
         </div>
-     
-        
+      </div>
+
+      <div id="section33">
+        <div class="gallery2">
+          <a target="_blank" href="2work.png">
+          <img src="./assets/2work.png" alt="2WORK" width="600" height="400">
+          </a>
+        <div class="desc">2work</div>
+          </div>
+
+        <div class="gallery2">
+          <a target="_blank" href="bull.png">
+            <img src="./assets/bull.png" alt="BULL" width="600" height="400">
+          </a>
+          <div class="desc">BULL</div>
+        </div>
+
+        <div class="gallery2">
+          <a target="_blank" href="idea.png">
+            <img src="./assets/idea.png" alt="IDEA" width="600" height="400">
+          </a>
+          <div class="desc">IDEA HOUSE</div>
+        </div>
+
+        <div class="gallery2">
+          <a target="_blank" href="soley.png">
+            <img src="./assets/soley.png" alt="SOLEY" width="600" height="400">
+          </a>
+          <div class="desc">SOLEY</div>
+        </div>
       </div>
 
       <div id="section35">
@@ -120,10 +151,8 @@
         </div>
       </div>
 
-      <div id="section4">
         <v-img id="cvpic"
         :src="require('./assets/cv.jpg')"></v-img>
-      </div>
 
       <div id="section45">
         <v-img id="bottombg"
@@ -134,9 +163,11 @@
         <div id="contact_info">
         <h1>CONTACT INFO</h1>
         <br>
-        <h2>+45 24 80 26 56</h2>
-        <a href="mailto:olafur.sig99@outlook.com"><h2>olafur.sig99@outlook.com</h2></a>
-        <a href="https://www.linkedin.com/in/xardalx/"><h2>LinkedIn</h2></a>
+        +45 24 80 26 56
+        <br>
+        <a href="mailto:olafur.sig99@outlook.com" style="color:white">olafur.sig99@outlook.com</a>
+        <br>
+        <a href="https://www.linkedin.com/in/xardalx/" style="color:white">LinkedIn</a>
         </div>
       </div>
     
@@ -166,6 +197,14 @@ export default {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
   }
+
+  #h2 :hover {
+    opacity: 70%;
+  }
+
+  #ardaltop {
+    padding-left: 25%;
+  }
   
   #section1 {
     height: 500px;
@@ -180,18 +219,36 @@ export default {
   }
 
   #section3 {
-    height: 1000px;
+    height: 500px;
     padding-left: 25%;
     padding-top: 10%;
     margin: 0;
     padding-right: 5%;
+    padding-bottom: 5%;
     
+  }
+
+  #section32 {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 25%;
+  }
+
+  #section33 {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-left: 25%;
   }
 
   #section35 {
     justify-content: center;
     align-items: center;
     padding-left: 25%;
+    padding-bottom: 10%;
   }
 
   #section4 {
@@ -199,6 +256,7 @@ export default {
     justify-content: center;
     align-content: center;
     background-color: white;
+    padding: 0;
   }
 
   #section45 {
