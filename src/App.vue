@@ -321,12 +321,12 @@ a {
   text-decoration: none;
   color: black;
   font-size: 24pt;
-
+  &:hover {
+    opacity: 0.7 !important;
+  }
 }
 
-a:hover {
-  opacity: 70%;
- }
+
 
  spacer {
    height: 200px;
